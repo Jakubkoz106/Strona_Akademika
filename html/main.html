@@ -1,0 +1,324 @@
+<!doctype html>
+
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>DS RIVIERA</title>
+    <meta name="description" content="DS RIVIERA">
+    <meta name="author" content="Kozlowski, Olech, Kowalczyk">
+
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <style type="text/css" media="screen">
+body {
+  background-color: rgba(237, 237, 237, 1);
+}
+.break {
+  word-break: break-all;
+}
+
+h1{
+float:left;
+ font-size: 60px;
+  font-family: 'Poppins',sans-serif;
+  word-break: break-all;
+}
+.topnav {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Style the links inside the navigation bar */
+.topnav logo {
+  float: left;
+  color: black;
+  text-align: center;
+  margin-top:15px;
+  margin-left:25px;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: 'Poppins',sans-serif;
+  font-weight:700;
+}
+
+.topnav b {
+  float: right;
+  margin-top:15px;
+  margin-right:20px;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: 'Poppins',sans-serif;
+  font-weight:500;
+}
+
+
+/* Change the color of links on hover */
+.topnav logo:hover {
+  color: rgba(51, 167, 255 , 0.5);
+}
+
+
+/* Add a color to the active/current link */
+.topnav logo.active {
+  color: rgba(51, 167, 255 , 0.5);
+}
+.logInButton {
+	background-color:rgba(51, 167, 255 , 0.5);
+	border-radius:10px;
+	display:inline-block;
+	cursor:pointer;
+    color: white;
+	font-family:'Poppins',sans-serif;
+	font-size:17px;
+	font-weight:bold;
+	padding:16px 31px;
+	text-decoration:none;
+}
+.logInButton:hover {
+	background-color:rgba(51, 167, 255 , 0.7);
+	color: rgba(0, 0, 0 , 0.4);
+}
+div#navigationRight {
+    float: right;
+    position: relative;
+    margin-block-end: 200px;
+    margin-right: 230px;
+}
+div#navigationLeft {
+    float: left;
+    width: 29.9%;
+    margin-top: 150px;
+    padding-left: 200px;
+
+    /*
+    display: flex;
+    justify-content: center;
+    align-items: center;  */
+}
+
+div#navigationLeft logo {
+    float: right;
+    color: rgba(49,158,244,255);
+    text-align: right;
+    margin-top:15px;
+    margin-left:25px;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 60px;
+    font-family: 'Poppins',sans-serif;
+    font-weight:700;
+}
+div#navigationLeft p {
+    float: right;
+    color: #4F4F4F;
+    text-align: right;
+    margin-top:15px;
+    margin-left:25px;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Poppins',sans-serif;
+    font-weight:400;
+
+}
+.buttonLeft {
+    background-color:rgb(229,221,195);
+    border-radius:10px;
+    /*display:inline-block; */
+    cursor:pointer;
+    color: rgb(49,100,244);
+    font-family:'Poppins',sans-serif;
+    font-size:17px;
+    font-weight:bold;
+    padding:16px 31px;
+    text-decoration:none;
+    float: right;
+    /*display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+.buttonLeft:hover {
+    background-color:rgb(229,221,195);
+    color: rgba(0, 0, 0 , 0.4);
+}
+
+div#extra {
+    clear: both;
+    width: auto;
+
+}
+.box{
+    margin-block-end: 100px;
+    margin-right: 250px;
+    margin-left: 250px;
+    border-radius:20px;
+    height: 500px;
+    /*display: flex;  */
+    justify-content: flex-start;
+    background-color: rgb(232,231,218) ;
+    position: relative;
+
+    display: grid;
+    grid-template-columns: auto auto;
+}
+div#footer {
+    background: rgba(242,242,242,255);
+    border-radius: 15px;
+    color: black;
+}
+div#footer p {
+    padding: 20px 10px;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+}
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+}
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 10px;
+}
+
+.grid-item {
+    text-align: left;
+}
+
+.grid-item2 {
+    width: auto;
+}
+
+.pPoppis{
+    float: left;
+    color: black;
+    text-align: left;
+
+    margin-left:25px;
+    /*padding: 14px 16px; */
+    text-decoration: none;
+    font-size: 23px;
+    font-family: 'Poppins',sans-serif;
+    font-weight:700;
+}
+.pPoppis2{
+    float: left;
+    color: black;
+    text-align: left;
+
+    margin-left:25px;
+    /*padding: 14px 16px; */
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Poppins',sans-serif;
+    font-weight:400;
+}
+
+
+    </style>
+</head>
+
+<body>
+<div class="grid-container">
+
+
+    <div class="grid-item" id="container">
+        <div class="topnav">
+            <logo>DS RIVIERA</logo>
+
+            <b class="logInButton">
+                <a href="loginPage.html" style="text-decoration: none">
+                    Zaloguj się
+                </a>
+            </b>
+
+        </div>
+        <div id="navigationRight">
+            <section >
+                <img class="responsive" style=" border-radius: 12px; float:left; height: auto " src="http://czarnota.org/gallery/albums/2014b/1998_Warszawa_-_ul_Warynskiego_12_-_Riviera.jpg" alt="DSRIVIERA JPG">
+            <!--- https://developer.mozilla.org/pl/docs/Web/CSS/CSS_Grid_Layout niech ktoś kompetentny to ogarnie błagam..--->
+            </section>
+        </div>
+        <div id="navigationLeft">
+            <section>
+                <logo>Twoje studenckie miejsce w Warszawie!</logo>
+            </section>
+            <p>
+                DS Riviera to najsłynniejszy akademik Politechniki Warszawskiej znajdujący się w samym sercu Warszawy.
+            </p>
+            <b class="buttonLeft ">
+                <a href="https://sspw.pl/kwaterunek/" target="_blank" style="text-decoration: none">
+                    Sprawdź naszą ofertę kwaterunkową!
+                </a>
+            </b>
+        </div>
+
+    </div>
+    <div class="grid-item" >
+        <div class="box" id="extra">
+            <div class="grid-container2">
+                <div class="grid-item2" style="text-align: left;">
+                    <p class="pPoppis">Znajdziesz nas tu: </p>
+                    <a href="https://www.google.com/maps/place/Dom+Studencki+Riviera+im.+Roberta+Lewandowskiego/@52.2162482,21.0139699,17z/data=!3m1!4b1!4m5!3m4!1s0x471ecce7c65b3787:0xced632d8e083a2e6!8m2!3d52.2162532!4d21.0162099" target="_blank">
+                        <img  class="responsive" style="clear: both; margin-left: 25px;border-radius: 25px; float:left; height: 400px; width: auto" src="../image/mapyGoogle.png" alt="Mapy">
+                    </a>
+                </div>
+                <div class="grid-item2" style="position: relative;">
+                    <p class="pPoppis" style="font-size: 23px;">
+                        Napisz do nas i dowiedz się więcej! <br><br>
+                        <p class="pPoppis2" style="font-family: sans-serif; color: #4F4F4F;">
+                            <br><br><br>
+                            Adres: ul. Waryńskiego 12, 00-631 Warszawa <br><br><br>
+
+                    e-mail: <a href="mailto:dsriviera_kontakt@pw.edu.pl" style="color: #4F4F4F;text-underline-position: under">dsriviera_kontakt@pw.edu.pl</a><br><br><br>
+
+                            tel: 22 234 98 81
+                        </p>
+                    </p>
+
+                    <p style="position: absolute; bottom: 40px;">
+                    <a  href="https://www.facebook.com/ds.riviera/?ref=page_internal"  target="_blank">
+                        <img   style=" margin-left: 25px;border-radius: 5px; float:left; height: 60px; width: auto" src="../image/fb.png" alt="fb">
+                    </a>
+                    <a >
+                        <img  style=" margin-left: 25px;border-radius: 5px; float:right; height: 60px; width: auto" src="../image/Instagram-Icon.png.webp" alt="insta">
+                    </a>
+                    <a >
+                        <img  style=" margin-left: 25px;border-radius: 5px; float:left; height: 60px; width: auto" src="../image/Twitter-logo.png" alt="twitter">
+                    </a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="grid-container3" id="footer">
+        <div class="grid-item" >
+            <img class="responsive" style="margin-top: 10px; margin-left: 100px;border-radius: 5px; height: 60px; width: 150px;  float:left;"src="../image/PW_logo.png" alt="pwLogo">
+        </div>
+        <div class="grid-item" style="align-items: center;" >
+            <p class="pPoppis2" style="font-family: sans-serif; font-size: 10px; color: #4F4F4F;">
+                © 1998-2022 <br>Politechnika Warszawska
+            </p>
+        </div>
+    </div>
+
+</div>
+</body>
+
+</html>

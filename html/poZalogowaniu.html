@@ -1,0 +1,354 @@
+<!doctype html>
+
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>DS RIVIERA</title>
+    <meta name="description" content="DS RIVIERA">
+    <meta name="author" content="Kozlowski, Olech, Kowalczyk">
+
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <style type="text/css" media="screen">
+body {
+  background-color: rgba(237, 237, 237, 1);
+}
+.break {
+  word-break: break-all;
+}
+
+h1{
+float:left;
+ font-size: 60px;
+  font-family: 'Poppins',sans-serif;
+  word-break: break-all;
+}
+.topnav {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Style the links inside the navigation bar */
+.topnav logo {
+  float: left;
+  color: black;
+  text-align: center;
+  margin-top:15px;
+  margin-left:25px;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: 'Poppins',sans-serif;
+  font-weight:700;
+}
+.topnav-phbutton {
+    float: right;
+    color: black;
+    margin-top:1px;
+    margin-right:2px;
+    padding: 18px 10px;
+    font-family: 'Poppins',sans-serif;
+    align-content: center;
+}
+
+.topnav b {
+  float: right;
+  margin-top:15px;
+  margin-right:20px;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: 'Poppins',sans-serif;
+  font-weight:500;
+}
+
+
+/* Change the color of links on hover */
+.topnav logo:hover {
+  color: rgba(51, 167, 255 , 0.5);
+}
+
+
+/* Add a color to the active/current link */
+.topnav logo.active {
+  color: rgba(51, 167, 255 , 0.5);
+}
+.logInButton {
+	background-color:rgba(51, 167, 255,0.5);
+	border-radius:10px;
+	display:inline-block;
+	cursor:pointer;
+    color: rgba(49,158,244,255);
+	font-family:'Poppins',sans-serif;
+	font-size:17px;
+	font-weight:bold;
+	padding:16px 31px;
+	text-decoration:none;
+
+}
+.logInButton:hover {
+	background-color:rgba(51, 167, 255 , 0.7);
+
+}
+div#navigationRight {
+    float: right;
+    position: relative;
+    height: 80%;
+}
+div#navigationLeft {
+    float: left;
+    width: 29.9%;
+    margin-top: 150px;
+    padding-left: 200px;
+    /*
+    display: flex;
+    justify-content: center;
+    align-items: center;  */
+}
+div#navigationMiddle{
+    float:center;
+    width: 29.9%;
+
+    padding-left: 200px;
+    display: flex;
+
+    align-items: center;
+}
+
+div#navigationLeft logo {
+    float: right;
+    color: rgba(49,158,244,255);
+    text-align: right;
+    margin-top:15px;
+    margin-left:25px;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 60px;
+    font-family: 'Poppins',sans-serif;
+    font-weight:700;
+}
+
+div#navigationLeft p {
+    float: right;
+    color:black;
+    text-align: right;
+    margin-top:15px;
+    margin-left:25px;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Poppins',sans-serif;
+    font-weight:300;
+    background-color:(230, 187, 51, 0.4);
+    -webkit-box-shadow: 11px -1px 36px -9px rgba(118, 181, 237, 1);
+    -moz-box-shadow: 11px -1px 36px -9px rgba(118, 181, 237, 1);
+    box-shadow: 11px -1px 36px -9px rgba(118, 181, 237, 1);
+    border-radius:10px;
+}
+
+.buttonLeft {
+    background-color:rgb(229,221,195);
+    border-radius:10px;
+    /*display:inline-block; */
+    cursor:pointer;
+    color: rgb(49,100,244);
+    font-family:'Poppins',sans-serif;
+    font-size:17px;
+    font-weight:bold;
+    padding:16px 31px;
+    text-decoration:none;
+    float: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttonLeft:hover {
+    background-color:rgb(229,221,195);
+    color: rgba(0, 0, 0 , 0.4);
+}
+
+div#extra {
+    clear: both;
+    width: 100%;
+}
+div#footer {
+    background: rgba(242,242,242,255);
+    color: black;
+}
+div#footer p {
+    padding: 20px 10px;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+.grid-container {
+  margin-left:40px;
+  display: grid;
+  float:center;
+  grid-template-columns: auto auto auto auto;
+  padding: 40px;
+  grid-gap: 50px;
+  background-color: rgba(240, 195, 103, 0.1);
+  box-shadow: 0 0 50px #ccc;
+  border-radius:10px;
+  justify-content: center;
+}
+.grid-item {
+  background-color: rgba(240, 195, 103);
+  box-shadow: 0 0 50px #ccc;
+  padding: 10px;
+  width: 180px;
+  height: 155px;
+  justify-content: center;
+  font-size: 30px;
+  text-align: center;
+  border-radius:10px;
+    height: 170px;
+}
+.grid-item:hover{
+    background-color:rgba(51, 167, 255 , 0.5);
+}
+.grid-container2 {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    padding: 5px;
+
+    text-align: left;
+}
+.grid-item2 {
+    text-align: left;
+    width: auto;
+    align-content: center;
+
+}
+.pPoppis2{
+    float: left;
+    color: black;
+    text-align: left;
+
+    margin-left:25px;
+    /*padding: 14px 16px; */
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Poppins',sans-serif;
+    font-weight:700;
+}
+
+
+
+    </style>
+</head>
+
+<body>
+<div id="container">
+    <div class="topnav">
+        <logo href="poZalogowaniu.html">DS RIVIERA</logo>
+
+        <b class="logInButton" >
+            <a href="main.html" style="text-decoration: none; ">
+                Wyloguj się
+            </a>
+        </b>
+        <div class="topnav-phbutton">
+            <section>
+                <a href = "poZalogowaniu.html">
+                    <img height="40" src="../image/home.png"/>
+                </a>
+                <a href = "#">
+                    <img height="40" src="../image/user.png"/>
+                </a>
+
+            </section>
+        </div>
+    </div>
+    <div id="navigationRight">
+        <section >
+            <img class="responsive" style="     -webkit-box-shadow: 11px -1px 36px -9px rgba(118, 181, 237, 1);
+    -moz-box-shadow: 11px -1px 36px -9px rgba(118, 181, 237, 1);
+    box-shadow: 11px -1px 36px -9px rgba(118, 181, 237, 1);border-radius: 20px; float:right; margin-top:40px;margin-right:180px;width:500px;height:600px; " src="https://images-ext-1.discordapp.net/external/m-sQjYQ_MwMb7ltLCeQ5x9Bcz4XVmp0mTC5a8Tz412o/https/ocdn.eu/pulscms-transforms/1/pHKk9kpTURBXy82MzlhZjQ0ZWVlYzgwNjlmODJjZDdlMDk3ZGUwOTE0My5qcGeSlQLNAcwAwsOVAgDNAljCw4GhMAE" alt="DSRIVIERA JPG">
+            <!--- https://developer.mozilla.org/pl/docs/Web/CSS/CSS_Grid_Layout niech ktoś kompetentny to ogarnie błagam..--->
+        </section>
+    </div>
+    <div id="navigationLeft">
+        <section>
+            <logo style="color: #f0c368" >Co możesz tu znaleźć?</logo>
+        </section>
+        <p>
+            Kompleks nowego domu studenckiego Politechniki Warszawskiej został wzniesiony w latach 1962–1964 według projektu architektów Kazimierza Thora i Czesława Molendy. Składał się z wieżowca oraz dwóch mniejszych obiektów, w których znalazły się m.in. sale sportowe, stołówka oraz sala widowiskowo-klubowa. „Riviera” była pierwszym w Polsce „wysokościowcem” pełniącym funkcje akademika.
+
+            W latach 70. na parterze budynku mieściła się galeria sztuki Remont. Od 1973 roku w kompleksie domu studenckiego mieści się klub Riviera Remont. W podziemiach na początku lat 90. mieścił się klub Hades. Na dachu znajduje się maszt telekomunikacyjny. W budynku mieści się także Centrum Ruchu Studenckiego, w którym siedzibę ma m.in. Studencka Telewizja Internetowa TVPW i Radio Aktywne.
+
+        </p>
+
+    </div>
+
+    <div id="extra">
+        <p></p>
+    </div>
+
+    <p style="  float: top;
+  color: black;
+  text-align: center;
+  float:center
+  margin-top:30px;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: 'Poppins',sans-serif;
+  font-weight:700;">Dostępne usługi:</p>
+    <div id="navigationMiddle">
+
+        <div class="grid-container">
+            <a href="https://sspw.pl/kwaterunek/" target="_blank" style="text-decoration: none; color: black">
+            <div class="grid-item"><img width="90" height="85" src="../image/kwaterunek.png"/> <p style="padding=0px;font-size: 20px;font-weight:700;font-family: 'Poppins',sans-serif;;float:center;">KWATERUNEK</p> </div>
+            </a>
+            <a href="noleg.html" style="text-decoration: none; color: black">
+            <div class="grid-item"><img width="90" height="85" src="../image/sleeping.png"/> <p style="padding=0px;font-size: 20px;font-weight:700;font-family: 'Poppins',sans-serif;;float:center;">NOCLEG</p></div>
+            </a>
+            <a href="#" style="text-decoration: none; color: black">
+            <div class="grid-item"><img width="90" height="85" src="../image/freelance.png"/> <p style="padding=0px;font-size: 20px;font-weight:700;font-family: 'Poppins',sans-serif;;float:center;">PORTIERNIA</p></div>
+            </a>
+            <a href="#" style="text-decoration: none; color: black">
+            <div class="grid-item"><img width="90" height="85" src="../image/calendar.png"/> <p style="padding=0px;font-size: 20px;font-weight:700;font-family: 'Poppins',sans-serif;;float:center;">KALENDARIUM</p></div>
+            </a>
+            <a href="cicha%20nauka.html" style="text-decoration: none; color: black">
+            <div class="grid-item"><img width="90" height="85" src="../image/mute.png"/> <p style="padding=0px;font-size: 20px;font-weight:700;font-family: 'Poppins',sans-serif;;float:center;">POKÓJ CICHEJ NAUKI</p></div>
+            </a>
+            <a href="#" style="text-decoration: none; color: black">
+            <div class="grid-item"><img width="90" height="85" src="../image/tools.png"/> <p style="padding=0px;font-size: 20px;font-weight:700;font-family: 'Poppins',sans-serif;;float:center;">ZGŁOŚ AWARIĘ</p></div>
+            </a>
+            <a href="pralkaOdkurzacz.html" style="text-decoration: none; color: black">
+            <div class="grid-item"><img width="90" height="85" src="../image/washing-machine.png"/> <p style="padding=0px;font-size: 20px;font-weight:700;font-family: 'Poppins',sans-serif;;float:center;">PRALNIA</p></div>
+            </a>
+            <a href="#" style="text-decoration: none; color: black">
+            <div class="grid-item"><img width="90" height="85" src="../image/shopping-cart.png"/> <p style="padding=0px;font-size: 20px;font-weight:700;font-family: 'Poppins',sans-serif;;float:center;">RYNECZEK RIVIERY</p></div>
+            </a>
+
+
+
+        </div>
+
+    </div>
+</div>
+<div class="grid-container2" id="footer">
+    <div class="grid-item2" >
+        <img class="responsive" style="margin-top: 10px; margin-left: 100px;border-radius: 5px; height: 60px; width: 150px;  float:left;"src="../image/PW_logo.png" alt="pwLogo">
+    </div>
+    <div class="grid-item2" style="align-items: center;" >
+        <p class="pPoppis2" style="font-family: sans-serif; font-size: 10px; color: #4F4F4F;">
+            © 1998-2022 <br>Politechnika Warszawska
+        </p>
+    </div>
+</div>
+</div>
+
+
+</body>
+
+</html>
